@@ -1,0 +1,12 @@
+while True:
+  a=input('')
+  if a.isdecimal() and float(a) > 30 :
+    print('너무 많다.')
+  elif a.isdecimal() and float (a) <= 30 :
+    for i in range (1, int(a)+1) :
+      for j in range(1,i+1) :
+       print(j, end='')
+      print()
+    break
+  else :
+    print('정수로 입력하세요.')  
